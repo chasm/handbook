@@ -6,7 +6,7 @@
  * info        #39b3d7     rgb(  57, 179, 215 )     hsla( 194, 66.4%,  53.3%, 1 )    cyan
  * primary     #3276b1     rgb(  50, 118, 177 )     hsla( 208, 55.9%,  44.5%, 1 )    blue
  * light text  #ffffff     rgb( 255, 255, 255 )     hsla(   0,  0.0%, 100.0%, 1 )    white
- * dark text   #414158     rgb(  65,  65,  88 )     hsla( 240, 15.0%,  30.0%, 1 )    dark gray
+ * dark text   #414158     rgb(  65,  65,  88 )     hsla( 240, 15.0%,  30.0%, 1 )    dark bluish gray
  * sidebar     #fafafa     rgb( 250, 250, 250 )     hsla(   0,  0.0%,  98.0%, 1 )    very light gray
  */
 
@@ -62,4 +62,44 @@ h2.lesson-title {
   padding: 10px;
   color: hsla( 0, 0.0%, 100.0%, 1 );
   background-color: hsla( 208, 55.9%, 44.5%, 1 );
+}
+
+h3,
+h4 {
+  font-size: 27px;
+  font-weight: normal;
+  color: hsla( 120, 39.6%, 46.0%, 1 );
+}
+
+mark.keyword {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: inherit + 1px;
+  color: hsla( 2, 64.7%, 50.0%, 1 );
+  background-color: inherit;
+}
+
+em,
+strong { color: hsla( 120, 39.6%, 46.0%, 1 ); }
+
+ul.objectives,
+.measures ul,
+.measures p,
+ul.resources {
+  font-size: 22px;
+}
+
+article footer { margin-top: 40px; }
+
+article header section,
+article footer section {
+  margin-bottom: 40px;
+}
+
+dl.faq { font-size: 22px; }
+dl.faq dt {
+  font-weight: normal;
+  color: hsla( 2, 64.7%, 50.0%, 1 );
+}
+dl.faq dd {
+  margin: 0 40px 20px;
 }
