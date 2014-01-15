@@ -1,7 +1,19 @@
+/*
+ * danger      #d2322d     rgb( 210,  50,  45 )     hsla(   2, 64.7%,  50.0%, 1 )    red
+ * warning     #ed9c28     rgb( 237, 156,  40 )     hsla(  35, 84.5%,  54.3%, 1 )    orange
+ * success     #47a447     rgb(  71, 164,  71 )     hsla( 120, 39.6%,  46.0%, 1 )    green
+ * success:h   #367d36     rgb(  54, 125,  54 )     hsla( 120, 39.6%,  35.0%, 1 )    darker green
+ * info        #39b3d7     rgb(  57, 179, 215 )     hsla( 194, 66.4%,  53.3%, 1 )    cyan
+ * primary     #3276b1     rgb(  50, 118, 177 )     hsla( 208, 55.9%,  44.5%, 1 )    blue
+ * light text  #ffffff     rgb( 255, 255, 255 )     hsla(   0,  0.0%, 100.0%, 1 )    white
+ * dark text   #414158     rgb(  65,  65,  88 )     hsla( 240, 15.0%,  30.0%, 1 )    dark gray
+ * sidebar     #fafafa     rgb( 250, 250, 250 )     hsla(   0,  0.0%,  98.0%, 1 )    very light gray
+ */
+
 body {
   font-size: 18px;
   min-height: 2000px;
-  color: hsla(240, 15%, 30%, 1);
+  color: hsla( 240, 15.0%, 30.0%, 1 );
 }
 
 .navbar-static-top {
@@ -13,6 +25,41 @@ body {
   padding: 0;
 }
 
+.navbar-default a.navbar-brand { color: hsla( 208, 55.9%, 44.5%, 1 ); }
+.navbar-default a.navbar-brand:hover { color: hsla( 194, 66.4%, 53.3%, 1 ); }
+
 main { margin-top: 80px; }
 
-h2.lesson-title { margin-top: 0; }
+aside.sidebar-nav {
+  padding-top: 15px;
+  background-color: hsla(   0,  0.0%,  98.0%, 1 );
+}
+
+aside.sidebar-nav ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+aside.sidebar-nav ol ol { padding-left: 15px; }
+aside.sidebar-nav ol ol a { color: hsla( 120, 39.6%, 46.0%, 1 ); }
+aside.sidebar-nav ol ol a:hover { color: hsla( 120, 39.6%, 35.0%, 1 ); }
+
+aside.sidebar-nav ol ol ol {
+  list-style-type: disc;
+  color: hsla( 194, 66.4%, 53.3%, 1 );
+  padding-left: 20px;
+}
+
+aside.sidebar-nav ol ol ol a { color: hsla( 194, 66.4%, 53.3%, 1 ); }
+aside.sidebar-nav ol ol ol a:hover { color: hsla( 194, 66.4%, 42.0%, 1 ); }
+
+aside.sidebar-nav .current-page { color: hsla( 2, 64.7%,  50.0%, 1 ); }
+
+h2.lesson-title {
+  font-size: 32px;
+  font-weight: normal;
+  margin-top: 0;
+  padding: 10px;
+  color: hsla( 0, 0.0%, 100.0%, 1 );
+  background-color: hsla( 208, 55.9%, 44.5%, 1 );
+}
