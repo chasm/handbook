@@ -32,8 +32,49 @@ main { margin-top: 80px; }
   padding: 0;
 }
 
+.navbar-default span.navbar-brand,
+.navbar-default span.navbar-brand:hover,
 .navbar-default a.navbar-brand { color: hsla( 208, 55.9%, 44.5%, 1 ); }
 .navbar-default a.navbar-brand:hover { color: hsla( 194, 66.4%, 53.3%, 1 ); }
+
+.nav > li > span.current-page {
+  position: relative;
+  display: block;
+  padding: 15px;
+}
+
+.navbar-nav > li > span.current-page {
+  line-height: 20px;
+}
+
+.navbar-nav > li > span.current-page {
+  text-shadow: 0 1px 0 hsla( 0, 0%, 100.0%, 0.25 );
+}
+
+.navbar-default .navbar-nav span.current-page {
+  color: hsla( 2, 64.7%, 50.0%, 1 );
+  background-color: hsla( 0, 0.0%, 90.6%, 1 );
+}
+
+
+.nav > li > span.current-page {
+  position: relative;
+  display: block;
+  padding: 15px;
+}
+
+.navbar-nav > li > span.current-page {
+  line-height: 20px;
+}
+
+.navbar-nav > li > span.current-page {
+  text-shadow: 0 1px 0 hsla( 0, 0%, 100.0%, 0.25 );
+}
+
+.navbar-default .navbar-nav span.current-page {
+  color: hsla( 2, 64.7%, 50.0%, 1 );
+  background-color: hsla( 0, 0.0%, 90.6%, 1 );
+}
 
 
 /* ========== Sidebar ========== */
@@ -55,14 +96,14 @@ aside.sidebar-nav ol ol a:hover { color: hsla( 120, 39.6%, 35.0%, 1 ); }
 aside.sidebar-nav ol ol ol {
   font-size: 90%;
   list-style-type: disc;
-  color: hsla(  35, 84.5%,  54.3%, 1 );
+  color: hsla( 35, 84.5%, 54.3%, 1 );
   padding-left: 20px;
 }
 
-aside.sidebar-nav ol ol ol a { color: hsla(  35, 84.5%,  54.3%, 1 ); }
-aside.sidebar-nav ol ol ol a:hover { color: hsla(  35, 84.5%,  44.0%, 1 ); }
+aside.sidebar-nav ol ol ol a { color: hsla( 35, 84.5%, 54.3%, 1 ); }
+aside.sidebar-nav ol ol ol a:hover { color: hsla(  35, 84.5%, 44.0%, 1 ); }
 
-aside.sidebar-nav .current-page { color: hsla( 2, 64.7%,  50.0%, 1 ); }
+aside.sidebar-nav .current-page { color: hsla( 2, 64.7%, 50.0%, 1 ); }
 
 
 /* ========== Headings ========== */
@@ -120,7 +161,7 @@ section {
 
 figcaption {
   font-size: 22px;
-  color: hsla(  35, 84.5%,  54.3%, 1 );
+  color: hsla( 35, 84.5%, 54.3%, 1 );
 }
 
 .personas figcaption { margin: 0 0 5px -15px; }
@@ -200,6 +241,11 @@ body > footer {
     0 -1px 5px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 -1px 0 hsla( 0, 0.0%, 100.0%, 0.15),
     0 -1px 5px hsla( 0, 0.0%, 0.0%, 0.075);
+}
+
+footer nav span.current-page {
+  font-weight: bold;
+  color: hsla( 2, 64.7%, 50.0%, 1 );
 }
 
 article footer { margin-top: 40px; }
