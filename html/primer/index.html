@@ -69,7 +69,7 @@
                 <a href="/primer/aria-and-roles" role="menuitem">ARIA and roles</a>
               </li>
               <li role="presentation">
-                <a href="/primer/personas-stories-wireframes" role="menuitem">Personas, stories, wireframes</a>
+                <a href="/primer/personas-stories-wireframes" role="menuitem">Personas, etc.</a>
               </li>
               <li role="presentation">
                 <a href="/primer/architecting-the-page" role="menuitem">Architecting the page</a>
@@ -137,6 +137,18 @@
                 typically invisible to the end user, but it allows the browser to <em>understand</em>,
                 on some very basic, not-too-bright, computer level <em>what the content means</em>.
               </p>
+              <figure style="float: right; width: 50%; margin: 15px">
+                <figcaption>An HTML document</figcaption>
+                <pre class="prettyprint"><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;title&gt;My Web Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- Put some content here! --&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+              </figure>
               <p>
                 To create this structure, we use a <mark class="keyword">markup language</mark>. A markup
                 language is exactly what it says it is: a language used to <em>mark up</em> content. In
@@ -153,6 +165,16 @@
             </section>
             <section id="fundamentals-style">
               <h3>Style</h3>
+              <figure style="float: right; width: 50%; margin: 15px">
+                <figcaption>Some typical CSS</figcaption>
+                <pre class="prettyprint"><code class="language-css">h2.lesson-title {
+  font-size: 32px;
+  font-weight: normal;
+  margin-top: 10px;
+  padding: 10px;
+  color: hsla( 0, 0.0%, 100.0%, 1 );
+}</code></pre>
+              </figure>
               <p>
                 Life would be rather boring without <mark class="keyword">style</mark>. But there's more
                 to it than just looking good. A properly-styled web page is a more
@@ -177,6 +199,14 @@
                 that has made the World Wide Web the ubiquitous information source it has become.
                 We've one-upped TV.
               </p>
+              <figure style="float: right; width: 50%; margin: 15px">
+                <figcaption>JavaScript and jQuery sample</figcaption>
+                <pre class="prettyprint"><code class="language-javascript">$('#wrong-button').on('click', function(e) {
+  e.preventDefault();
+  console.log('You pushed the wrong button!');
+});
+</code></pre>
+              </figure>
               <p>
                 Most interactivity in browsers is provided by scripts, and the scripting language of the
                 World Wide Web is <mark class="keyword">JavaScript</mark>. So we'll be learning a bit of
@@ -286,6 +316,7 @@
         </div>
       </div>
     </footer>
+    <script src="//google-code-prettify.googlecode.com/svn/loader/run_prettify.js?skin=sunburst"></script>
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="/js/bootstrap.js"></script>
     <script src="/js/main.js"></script>
