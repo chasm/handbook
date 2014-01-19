@@ -6,6 +6,7 @@
  * info        #39b3d7     rgb(  57, 179, 215 )     hsla( 194, 66.4%,  53.3%, 1 )    cyan
  * primary     #3276b1     rgb(  50, 118, 177 )     hsla( 208, 55.9%,  44.5%, 1 )    blue
  * light text  #ffffff     rgb( 255, 255, 255 )     hsla(   0,  0.0%, 100.0%, 1 )    white
+ * crumbs      #b3b3b3     rgb( 179, 179, 179 )     hsla(   0,  0.0%,  60.0%, 1 )    medium gray
  * dark text   #414158     rgb(  65,  65,  88 )     hsla( 240, 15.0%,  30.0%, 1 )    dark bluish gray
  * bs border   #e7e7e7     rgb( 231, 231, 231 )     hsla(   0,  0.0%,  90.6%, 1 )    very light gray
  * bs gradient #f8f8f8     rgb( 248, 248, 248 )     hsla(   0,  0.0%,  97.3%, 1 )    lighter gray
@@ -52,7 +53,7 @@ main { margin-top: 80px; }
 }
 
 .navbar-default .navbar-nav span.current-page {
-  color: hsla( 2, 64.7%, 50.0%, 1 );
+  color: hsla( 2, 64.7%, 60.0%, 1 );
   background-color: hsla( 0, 0.0%, 90.6%, 1 );
 }
 
@@ -113,6 +114,11 @@ aside.sidebar-nav ol ol ol a { color: hsla( 35, 84.5%, 54.3%, 1 ); }
 aside.sidebar-nav ol ol ol a:hover { color: hsla(  35, 84.5%, 44.0%, 1 ); }
 
 aside.sidebar-nav .current-page { color: hsla( 2, 64.7%, 50.0%, 1 ); }
+
+.toc-header {
+  font-size: 14px;
+  color: hsla( 0, 0.0%, 60.0%, 1 );
+}
 
 
 /* ========== Headings ========== */
